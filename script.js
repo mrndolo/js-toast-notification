@@ -8,4 +8,8 @@ function showToast(msg){
     toast.classList.add('toast');
     toast.innerHTML = msg;
     toastBox.appendChild(toast);
+
+    setTimeout(()=>{
+        toast.remove()
+    },5000);
 }
